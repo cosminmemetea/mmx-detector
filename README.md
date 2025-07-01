@@ -83,6 +83,9 @@ curl -F "file=@image.jpg" "http://localhost:8000/predict?model=full" --output ou
 ├── requirements.txt
 └── README.md
 ```
+Docker Builds:
+
+docker run --rm -p 8000:8000 yolov3-ros2-api
 
 ## Credits
 
