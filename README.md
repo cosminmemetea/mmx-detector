@@ -1,4 +1,5 @@
 # YOLOv3 Detection API
+<img width="822" alt="Demo" src="https://github.com/user-attachments/assets/599989e7-2179-4ab7-a2bd-39ead18b6803" />
 
 A FastAPI-based object detection service using YOLOv3/YOLOv3-Tiny (Darknet) models.
 
