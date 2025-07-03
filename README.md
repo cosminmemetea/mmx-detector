@@ -23,8 +23,8 @@ A FastAPI-based object detection service using YOLOv3/YOLOv3-Tiny (Darknet) mode
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+   git clone https://github.com/cosminmemetea/mmx-detector.git
+   cd mmx-detector
    ```
 
 2. **Initialize environment & download weights**
