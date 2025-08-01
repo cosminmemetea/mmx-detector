@@ -88,6 +88,13 @@ Docker Builds:
 
 docker run --rm -p 8000:8000 yolov3-ros2-api
 
+docker run --rm -p 8000:8000 mmx-detector
+
+## Usage
+docker build -t xmmx-detector:latest .
+docker run --rm -p 8000:8000 xmmx-detector:latest
+
+
 ## Credits
 
 * **YOLOv3 & YOLOv3-Tiny models** developed by **Joseph Redmon** and the Darknet community.
