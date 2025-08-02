@@ -30,6 +30,7 @@ A FastAPI-based object detection service using YOLOv3/YOLOv3-Tiny (Darknet) mode
 2. **Initialize environment & download weights**
 
    ```bash
+   chmod +x scripts/init.sh
    scripts/init.sh
    source venv/bin/activate
    ```
@@ -95,10 +96,34 @@ docker build -t xmmx-detector:latest .
 docker run --rm -p 8000:8000 xmmx-detector:latest
 
 
+## Links
+
+- Original Darknet (archived): https://github.com/pjreddie/darknet
+- AlexeyAB's fork (widely used for YOLOv3/v4): https://github.com/AlexeyAB/darknet
+- Hank.ai's fork (current active maintenance): https://github.com/hank-ai/darknet
+- Official Darknet website (original, by Joseph Redmon): https://pjreddie.com/darknet/
+- Hank.ai announcements: https://hank.ai/darknet-welcomes-hank-ai-as-official-sponsor-and-commercial-entity/ (sponsorship details)
+- For weights downloads (use mirrors for reliability, as pjreddie.com is unstable):
+
+- YOLOv3-Tiny: https://github.com/AlexeyAB/darknet/releases/download/yolov4/yolov3-tiny.weights
+- YOLOv3 Full: https://github.com/AlexeyAB/darknet/releases/download/yolov4/yolov3.weights
+
+
+- COCO classes: https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names (still reliable)
+
 ## Credits
 
-* **YOLOv3 & YOLOv3-Tiny models** developed by **Joseph Redmon** and the Darknet community.
-* **COCO dataset classes** by **COCO Consortium**.
-* **FastAPI** by **Sebastian Ramirez**.
+- **YOLOv3 & YOLOv3-Tiny models** developed by **Joseph Redmon** and the Darknet community (original repository: https://github.com/pjreddie/darknet).
+- Fork and enhancements by **Alexey Bochkovskiy (AlexeyAB)** (repository: https://github.com/AlexeyAB/darknet).
+- Current maintenance sponsored by **Hank.ai** and developed by **Stéphane Charette** (repository: https://github.com/hank-ai/darknet).
+- **COCO dataset classes** by **COCO Consortium**.
+- **FastAPI** by **Sebastián Ramírez**.
+
 
 ## License
+
+MIT – Permissive open-source license allowing free use, modification, and distribution for any purpose, with minimal restrictions.
+
+## Contributing
+Contributions make this repo better! Whether fixing bugs, adding features, or improving docs, you're welcome.
+Let's have fun!
