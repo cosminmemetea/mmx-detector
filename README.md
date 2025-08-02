@@ -1,6 +1,39 @@
 # YOLOv3 Detection API
+
+A FastAPI-based object detection service using YOLOv3/YOLOv3-Tiny (Darknet) models.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.95.2+-green.svg)](https://fastapi.tiangolo.com/)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](https://github.com/cosminmemetea/mmx-detector/actions)
+[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 <img width="822" alt="Demo" src="https://github.com/user-attachments/assets/599989e7-2179-4ab7-a2bd-39ead18b6803" />
 
+
+## Features
+- **Multiple Routes**
+  - `/detect/bboxes` — Returns JSON bounding boxes & confidence.
+  - `/detect/metadata` — Returns detailed detections (coords, class names, confidence).
+  - `/detect/image` — Returns annotated image as PNG.
+  - `/detect/detect_and_draw_box` — Returns Base64-encoded PNG + metadata.
+  - `/predict` — Unified endpoint streaming annotated JPEG.
+- **Model Selection**
+  - Choose between `tiny` (YOLOv3-Tiny) or `full` (YOLOv3) via `?model=tiny|full`.
+- **Zero dependencies on CVLib** — Pure OpenCV DNN + FastAPI.
+- **Docker-friendly** — Easy containerization.
+
+## Prerequisites
+- Python 3.8 or higher
+- `curl` and `git` installed
+- For macOS/Linux: Ensure `bash` is available
+- For Docker: Docker installed and running
+
+## Setup
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/cosminmemetea/mmx-detector.git
+   cd mmx-detector
 A FastAPI-based object detection service using YOLOv3/YOLOv3-Tiny (Darknet) models.
 
 ## Features
